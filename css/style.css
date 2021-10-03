@@ -45,6 +45,11 @@ body {
   padding-right: 30px;
 }
 
+.resume{
+  width: 600px;
+  height: 800px;
+}
+
 .desc{ 
   font-style: italic;
 }
@@ -125,7 +130,7 @@ body {
     display: block;
   }
   .iframe{
-    width: 500px !important;
+    width: 250px !important;
   }
 }
 
@@ -140,6 +145,10 @@ body {
     float: none;
     display: block;
     text-align: left;
+  }
+
+  .resume{
+    width: 300px;
   }
 
   td, tr { 
@@ -162,6 +171,10 @@ body {
   .topnav a.active {
     background-color: transparent !important;
     color: white !important;
+  }
+
+  .mail{
+    font-size: 13px;
   }
 }
 

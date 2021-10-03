@@ -165,7 +165,7 @@ function loadcontact(){
 				</tr>\
 				<tr>\
 					<td>MAIL</td>\
-					<td><a href=\"mailto:jayaraj.balagopal@students.iiit.ac.in\">jayaraj.balagopal@students.iiit.ac.in</a></td>\
+					<td><a class=\"mail\" href=\"mailto:jayaraj.balagopal@students.iiit.ac.in\">jayaraj.balagopal@students.iiit.ac.in</a></td>\
 				</tr>\
 			</table>\
 		</div>"
@@ -184,7 +184,7 @@ function loadresume(){
 	activetab.className = "active";
 	content = document.getElementById("content");
 	content.innerHTML="\
-		<iframe src=\"images/resume.pdf\" width=\"800\" height=\"600\" >"
+		<iframe src=\"images/resume.pdf\" class=\"resume\">"
 	loadmenu();
 }
 
