@@ -41,15 +41,6 @@ function loadabout(){
 			<i class=\"fa fa-code fa-3x logo\" style=\"color:brown;\"></i></a>\
 		</div>\
 		<div class=\"subhead\">\
-			<h1>Vedios</h1>\
-			<div>\
-				<iframe type=\"text/html\" src=\"https://www.youtube.com/embed/cOMPobd3PRE?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=http://youtubeembedcode.com\"></iframe>\
-			</div>\
-			<div>\
-				<iframe  type=\"text/html\" src=\"https://www.youtube.com/embed/Ehn1zu85Ks0?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=http://youtubeembedcode.com\"></iframe>\
-			</div>\
-		</div>\
-		<div class=\"subhead\">\
 			<h1>Employment</h1>\
 			<table class=\"shorttable\">\
 				<tr>\
@@ -61,6 +52,11 @@ function loadabout(){
 					<td>Ericsson</td>\
 					<td>3 Years</td>\
 					<td>Banglore</td>\
+				</tr>\
+				<tr>\
+					<td>Sposea B.B</td>\
+					<td>2 Months</td>\
+					<td>Calicut</td>\
 				</tr>\
 			</table>\
 		</div>\
@@ -74,6 +70,15 @@ function loadabout(){
 				<li>Ansible,Puppet</li>\
 				<li>Django</li>\
 			</ul>\
+		</div>\
+		<div class=\"subhead\">\
+			<h1>Hobbies/Vedio Gallery</h1>\
+			<div>\
+				<iframe type=\"text/html\" src=\"https://www.youtube.com/embed/cOMPobd3PRE?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=http://youtubeembedcode.com\"></iframe>\
+			</div>\
+			<div>\
+				<iframe  type=\"text/html\" src=\"https://www.youtube.com/embed/Ehn1zu85Ks0?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=http://youtubeembedcode.com\"></iframe>\
+			</div>\
 		</div>"
 	loadmenu();
 }
@@ -96,19 +101,19 @@ function loadedu(){
 				<th>CGPA/Percentage</th>\
 			</tr>\
 			<tr>\
-				<td><img class=\"logo\" alt=\"iiit-h\" src=\"https://www.iiit.ac.in/img/iiit-new.png\"></td>\
+				<td><a href=\"https://www.iiit.ac.in/\"><img class=\"logo\" alt=\"iiit-h\" src=\"https://www.iiit.ac.in/img/iiit-new.png\"></a></td>\
 				<td>IIIT-H</td>\
 				<td>IIIT-H</td>\
 				<td>Nil</td>\
 			</tr>\
 			<tr>\
-				<td><img class=\"logo\" alt=\"mec\" src=\"http://www.mec.ac.in/mec/images/MEC_logo.png\"></td>\
+				<td><a href=\"https://www.mec.ac.in/\"><img class=\"logo\" alt=\"mec\" src=\"http://www.mec.ac.in/mec/images/MEC_logo.png\"></a></td>\
 				<td>Govt. Model Engineering College</td>\
 				<td>CUSAT</td>\
 				<td>8.26</td>\
 			</tr>\
 			<tr>\
-				<td><img class=\"logo\" alt=\"chinmaya vidyalaya\" src=\"https://upload.wikimedia.org/wikipedia/en/a/a7/Chinmaya_Vidyalaya_logo.png\"></td>\
+				<td><a href=\"https://chinmayavidyalaya.edu.in/\"><img class=\"logo\" alt=\"chinmaya vidyalaya\" src=\"https://upload.wikimedia.org/wikipedia/en/a/a7/Chinmaya_Vidyalaya_logo.png\"></a></td>\
 				<td>Chinmaya Vidayala Tripunithura</td>\
 				<td>CBSE</td>\
 				<td>92%</td>\
@@ -167,6 +172,74 @@ function loadcontact(){
 	loadmenu();
 }
 
+
+function loadresume(){
+	navmenu = document.getElementById("topnav");
+	div_a = navmenu.childNodes;
+	for (i=0; i<div_a.length; i++) {
+		if(div_a[i].className == "active")
+			div_a[i].className = "";	
+	}
+	activetab = document.getElementById("cv-tag");
+	activetab.className = "active";
+	content = document.getElementById("content");
+	content.innerHTML="\
+		<iframe src=\"images/resume.pdf\" width=\"800\" height=\"600\" >"
+	loadmenu();
+}
+
+function loadprojects(){
+	navmenu = document.getElementById("topnav");
+	div_a = navmenu.childNodes;
+	for (i=0; i<div_a.length; i++) {
+		if(div_a[i].className == "active")
+			div_a[i].className = "";	
+	}
+	activetab = document.getElementById("pro-tag");
+	activetab.className = "active";
+	content = document.getElementById("content");
+	content.innerHTML="\
+		<div class=\"subhead\">\
+				<h1>Projects</h1>\
+				<table class=\"shorttable\">\
+					<tr>\
+						<th>Project Name</th>\
+						<th>Description</th>\
+						<th>Timeline</th>\
+					</tr>\
+					<tr>\
+						<td>Summarisation Of Long Text Extracted From Article Images By Integrating Extractive\
+	And Abstractive Text Summarisation Methods</td>\
+						<td>Worked on an algorithm for long text summarisation by combining extractive and abstractive text\
+							summarisation techniques. Showcased the same by extracting text from article images and generating the\
+							summary using the algorithm.</td>\
+						<td>Apr 2018</td>\
+					</tr>\
+					<tr>\
+						<td>Event Management Tool</td>\
+						<td>Developed an event management tool using django framework as part of college techfest by which event\
+							managers ,venue managers and other co-ordinators can interact effectively, co-ordinate their operations,\
+							update event related details, manage registrations and provide realtime details on ongoing events.</td>\
+						<td>Oct 2017</td>\
+					</tr>\
+					<tr>\
+						<td>Carpooling Application</td>\
+						<td>Developed a ride sharing application by which people can pool-in, share a ride and split the fares.\
+						</td>\
+						<td>Jun 2017</td>\
+					</tr>\
+					<tr>\
+						<td>Miniature Home automation system</td>\
+						<td>Developed a miniature home automation system to control appliances through an android app that\
+							communicates with these appliances through Bluetooth network.</td>\
+						<td>Jun 2017</td>\
+					</tr>\
+				</table>\
+			</div>"
+	loadmenu();
+}
+
+
 function loadmenu() {
   var top = document.getElementById("topnav");
   if (top.className === "topnav") {
@@ -180,4 +253,5 @@ function displaytime() {
 	time = new Date();
 	foot = document.getElementById("time");
 	foot.innerHTML="Time: "+time;
+	setTimeout(displaytime, 1);
 }
