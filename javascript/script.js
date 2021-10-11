@@ -10,6 +10,7 @@ function loadhome(){
 	content = document.getElementById("content");
 	content.innerHTML="\
 		<img src=\"images/jay.jpg\" alt=\"Jayaraj Balagopal\" title=\"Jayaraj Balagopal\" class=\"circle\">\
+		<p>Jayaraj Balagopal</p>\
 		<p>M.Tech CSE Student at IIIT-H</p>"
 	loadmenu();
 }
@@ -101,19 +102,19 @@ function loadedu(){
 				<th>CGPA/Percentage</th>\
 			</tr>\
 			<tr>\
-				<td><a href=\"https://www.iiit.ac.in/\"><img class=\"logo\" alt=\"iiit-h\" src=\"https://www.iiit.ac.in/img/iiit-new.png\"></a></td>\
+				<td><a href=\"https://www.iiit.ac.in/\"><img class=\"logo\" alt=\"iiit-h\" title=\"iiit-h\" src=\"https://www.iiit.ac.in/img/iiit-new.png\"></a></td>\
 				<td>IIIT-H</td>\
 				<td>IIIT-H</td>\
 				<td>Nil</td>\
 			</tr>\
 			<tr>\
-				<td><a href=\"https://www.mec.ac.in/\"><img class=\"logo\" alt=\"mec\" src=\"http://www.mec.ac.in/mec/images/MEC_logo.png\"></a></td>\
+				<td><a href=\"https://www.mec.ac.in/\"><img class=\"logo\" alt=\"mec\" title=\"mec\" src=\"http://www.mec.ac.in/mec/images/MEC_logo.png\"></a></td>\
 				<td>Govt. Model Engineering College</td>\
 				<td>CUSAT</td>\
 				<td>8.26</td>\
 			</tr>\
 			<tr>\
-				<td><a href=\"https://chinmayavidyalaya.edu.in/\"><img class=\"logo\" alt=\"chinmaya vidyalaya\" src=\"https://upload.wikimedia.org/wikipedia/en/a/a7/Chinmaya_Vidyalaya_logo.png\"></a></td>\
+				<td><a href=\"https://chinmayavidyalaya.edu.in/\"><img class=\"logo\" alt=\"chinmaya vidyalaya\" title=\"chinmaya vidyalaya\" src=\"https://upload.wikimedia.org/wikipedia/en/a/a7/Chinmaya_Vidyalaya_logo.png\"></a></td>\
 				<td>Chinmaya Vidayala Tripunithura</td>\
 				<td>CBSE</td>\
 				<td>92%</td>\
